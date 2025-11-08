@@ -60,8 +60,7 @@ echo "Hello from web-server-1 (Ubuntu)" | sudo tee /var/www/html/index.html
 echo "Hello from web-server-2 (Ubuntu)" | sudo tee /var/www/html/index.html
 
 
-
-### 5️⃣ Create Target Group
+## 5️⃣ Create Target Group
 
 - EC2 → Target Groups → Create Target Group
 - Type: Instances
@@ -69,7 +68,7 @@ echo "Hello from web-server-2 (Ubuntu)" | sudo tee /var/www/html/index.html
 - Register both EC2 instances
 - Health check path: /
 
-### 6️⃣ Create Application Load Balancer
+## 6️⃣ Create Application Load Balancer
 
 - EC2 → Load Balancers → Create → Application Load Balancer
 - Scheme: Internet-facing
@@ -79,7 +78,7 @@ echo "Hello from web-server-2 (Ubuntu)" | sudo tee /var/www/html/index.html
 - Listener: HTTP port 80 → forward to your target group
 - Wait for the ALB status to become Active.
 
-### 7️⃣ Test the Load Balancer
+## 7️⃣ Test the Load Balancer
 
 - Copy the ALB DNS name, e.g.: my-alb-1234567890.us-east-1.elb.amazonaws.com
 - Open it in a browser:  http://my-alb-1234567890.us-east-1.elb.amazonaws.com
@@ -87,4 +86,4 @@ echo "Hello from web-server-2 (Ubuntu)" | sudo tee /var/www/html/index.html
 Hello from web-server-1
 Hello from web-server-2
 
-### 🎯 Load balancing confirmed!
+## 🎯 Load balancing confirmed!
