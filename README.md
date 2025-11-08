@@ -59,6 +59,8 @@ echo "Hello from web-server-1 (Ubuntu)" | sudo tee /var/www/html/index.html
 - Repeat for the second instance, changing the message to:
 echo "Hello from web-server-2 (Ubuntu)" | sudo tee /var/www/html/index.html
 
+
+
 ### 5️⃣ Create Target Group
 
 - EC2 → Target Groups → Create Target Group
