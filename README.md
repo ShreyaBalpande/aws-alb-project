@@ -90,3 +90,13 @@ Hello from web-server-1
 Hello from web-server-2
 
 ### 🎯 Load balancing confirmed!
+
+
+### Images added for refrence
+
+![EC2 dashboard](ec2-dashboard.png)
+![Apache test](apache-test.png)
+![Target group healthy](target-group.png)
+![ALB active](alb-dashboard.png)
+![Architecture diagram](architecture.txt)
+
