@@ -1,0 +1,10 @@
+📊 Architecture Diagram
+
+  
+
+ User
+  │
+  ▼
+ Application Load Balancer
+  ├── EC2 Instance (web-server-1)
+  └── EC2 Instance (web-server-2)
