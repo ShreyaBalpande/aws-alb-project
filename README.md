@@ -66,4 +66,27 @@ All resources were created via the AWS Management Console (no CLI), perfect for 
 - ype: Instances
 - Protocol: HTTP (port 80)
 - Register both EC2 instances
-- Health check path: / 
+- Health check path: /
+
+
+### 6️⃣ Create Application Load Balancer
+
+- EC2 → Load Balancers → Create → Application Load Balancer
+- Scheme: Internet-facing
+- IP type: IPv4
+- Network mapping: select both subnets
+- Security group: allow HTTP (80)
+- Listener: HTTP port 80 → forward to your target group
+- Wait for the ALB status to become Active.
+  
+
+### 7️⃣ Test the Load Balancer
+
+- Copy the ALB DNS name, e.g.:
+- my-alb-1234567890.us-east-1.elb.amazonaws.com
+- Open it in a browser: http://my-alb-1234567890.us-east-1.elb.amazonaws.com
+- Refresh multiple times — you should see responses alternate:
+Hello from web-server-1
+Hello from web-server-2
+
+### 🎯 Load balancing confirmed!
